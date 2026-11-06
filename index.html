@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Calotype · 先存原片，再显影的 iPhone 相机</title>
+  <meta name="description" content="Calotype 是一款 iPhone 相机：用 Apple ProRAW 拍摄，先把原片存好，再在手机上显影成照片。TestFlight 公测中。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3eee6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15100d" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://calotype.lfkdsk.org/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://calotype.lfkdsk.org/">
+  <link rel="alternate" hreflang="en" href="https://calotype.lfkdsk.org/en/">
+  <link rel="alternate" hreflang="x-default" href="https://calotype.lfkdsk.org/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Calotype">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="https://calotype.lfkdsk.org/">
+  <meta property="og:title" content="Calotype · 先存原片，再显影">
+  <meta property="og:description" content="用 Apple ProRAW 拍摄、在 iPhone 上显影的相机。TestFlight 公测中。">
+  <meta property="og:image" content="https://calotype.lfkdsk.org/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Calotype 的 C 形标记和名称">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="assets/develop.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="wrap site-head">
+    <a class="brand" href="./" aria-label="Calotype 首页">
+      <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+        <path class="arc" d="M702.92 321.08A270 270 0 1 0 702.92 702.92" fill="none" stroke-width="170"/>
+        <circle class="dot" cx="512" cy="512" r="72"/>
+      </svg>
+      <span>Calotype</span>
+    </a>
+    <nav class="site-nav" aria-label="站点">
+      <a href="privacy.html">隐私</a>
+      <a href="en/" hreflang="en" lang="en">English</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">iPhone 相机 · TestFlight 公测</p>
+        <h1>先存原片，<br>再显影。</h1>
+        <p class="lead">Calotype 是一款 iPhone 相机。它用 Apple ProRAW 拍摄，先把原片完整存好，再在手机上把它显影成照片，存进系统相册。</p>
+        <div class="cta-row">
+          <a class="cta" href="https://testflight.apple.com/join/3yMsYRav">加入 TestFlight 公测 <span class="arrow" aria-hidden="true">↗</span></a>
+          <p class="cta-note">测试版，通过 Apple 的 TestFlight 安装。需要 iOS 17 或更高、支持 Apple ProRAW 的 iPhone Pro 机型。</p>
+        </div>
+      </div>
+
+      <figure class="plate develop" data-develop>
+        <div class="plate-frame">
+          <div class="plate-edge top" aria-hidden="true"><span>Calotype</span><span>4 : 3</span></div>
+          <svg class="plate-image" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
+            <rect width="800" height="600" fill="#ede3d3"/>
+            <circle cx="560" cy="226" r="96" fill="#ff6a00"/>
+            <path d="M0 330 L120 290 L230 312 L360 252 L470 300 L600 268 L720 296 L800 280 L800 392 L0 392 Z" fill="#b79c83"/>
+            <path d="M0 392 L800 392 L800 600 L0 600 Z" fill="#d6c6b0"/>
+            <rect x="520" y="404" width="80" height="6" fill="#ff6a00"/>
+            <rect x="532" y="424" width="56" height="5" fill="#ff6a00"/>
+            <rect x="542" y="442" width="36" height="4" fill="#ff6a00"/>
+            <rect x="550" y="458" width="20" height="3" fill="#ff6a00"/>
+            <path d="M0 470 C160 438 300 452 420 486 C540 520 680 528 800 506 L800 600 L0 600 Z" fill="#6e5646"/>
+            <path d="M0 540 C200 520 420 548 800 560 L800 600 L0 600 Z" fill="#1e1713"/>
+            <rect x="196" y="300" width="10" height="190" fill="#1e1713"/>
+            <rect x="166" y="318" width="70" height="8" fill="#1e1713"/>
+          </svg>
+          <div class="plate-meter" aria-hidden="true"><span></span></div>
+          <div class="plate-edge bottom" aria-hidden="true"><span>1841</span><span class="plate-states"><span class="state-neg">Neg</span><span>▸</span><span class="state-pos">Pos</span></span></div>
+        </div>
+        <figcaption>
+          <span>示意图：负片显影为正片。不是实拍样片。</span>
+          <button class="replay" type="button" data-replay hidden>再显影一次</button>
+        </figcaption>
+      </figure>
+    </div>
+
+    <section class="wrap section" aria-labelledby="what-title">
+      <p class="section-label"><b>01</b>是什么</p>
+      <div class="prose">
+        <h2 id="what-title">拍摄和显影，分成两步</h2>
+        <p>按下快门时，Calotype 先把 Apple ProRAW 原片写进 App，然后才开始显影：把原片处理成可以直接看、直接分享的照片（HEIF 或 JPEG），存进系统相册。</p>
+        <p>原片一直留在 App 里。万一显影没有成功，可以在 App 的相册里从原片重新显影。</p>
+        <p class="aside-note">名字取自 William Henry Fox Talbot 在 1841 年取得专利的卡罗式摄影法（calotype）：先在纸上得到一张负片，再由它印出正片。</p>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="how-title">
+      <p class="section-label"><b>02</b>怎么用</p>
+      <div>
+        <h2 id="how-title">四个步骤</h2>
+        <ol class="steps">
+          <li>
+            <h3>取景</h3>
+            <p>打开就是后置相机取景器。可以切换镜头（以机型为准）、调整曝光补偿；长按取景框锁定曝光和对焦。</p>
+          </li>
+          <li>
+            <h3>拍摄</h3>
+            <p>按下快门，ProRAW 原片先保存到 App 里。</p>
+          </li>
+          <li>
+            <h3>显影</h3>
+            <p>显影在后台排队进行，不必等它完成，可以接着拍下一张。</p>
+          </li>
+          <li>
+            <h3>入册</h3>
+            <p>成片存入系统相册，格式可选 HEIF、JPEG 或两者都要；也可以在设置里选择把 ProRAW 原片一起存进去。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="why-title">
+      <p class="section-label"><b>03</b>为什么</p>
+      <div>
+        <h2 id="why-title">三个出发点</h2>
+        <dl class="notes">
+          <div>
+            <dt>RAW 显影</dt>
+            <dd>每张成片都从 ProRAW 原片显影而来。原片留在 App 里，需要时可以回到起点。</dd>
+          </div>
+          <div>
+            <dt>后台处理</dt>
+            <dd>快门不等显影。拍摄和显影分开排队，按下去就能接着拍。</dd>
+          </div>
+          <div>
+            <dt>界面简洁</dt>
+            <dd>打开就是取景器。常用的控制留在手边，其余的收进设置。</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Sample gallery. Add approved photos to samples/ (see samples/README.md),
+         fill in the list items below, then delete the hidden attribute on this section. -->
+    <section class="wrap section" id="samples" aria-labelledby="samples-title" hidden>
+      <p class="section-label"><b>※</b>样片</p>
+      <div>
+        <h2 id="samples-title">用 Calotype 拍的照片</h2>
+        <ul class="samples-grid">
+          <!--
+          <li>
+            <figure>
+              <img src="samples/01.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="画面内容的简短描述">
+              <figcaption>拍摄地点或说明</figcaption>
+            </figure>
+          </li>
+          -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="req-title">
+      <p class="section-label"><b>04</b>设备要求</p>
+      <div>
+        <h2 id="req-title">需要什么</h2>
+        <dl class="specs">
+          <div><dt>设备</dt><dd>支持 Apple ProRAW 的 iPhone Pro 机型（仅限 iPhone）</dd></div>
+          <div><dt>系统</dt><dd>iOS 17 或更高</dd></div>
+          <div><dt>安装</dt><dd>先在 iPhone 上安装 Apple 的 TestFlight App，再打开下面的公测链接</dd></div>
+          <div><dt>网络</dt><dd>不需要。App 不联网，详见<a href="privacy.html">隐私说明</a></dd></div>
+          <div><dt>状态</dt><dd>公测版本，功能和界面还在调整，欢迎反馈问题</dd></div>
+        </dl>
+        <div class="cta-row closing">
+          <a class="cta" href="https://testflight.apple.com/join/3yMsYRav">加入 TestFlight 公测 <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>Calotype · iPhone 相机</p>
+      <ul>
+        <li><a href="privacy.html">隐私说明</a></li>
+        <!-- TODO(main session): confirm the public feedback channel before publishing. -->
+        <li><a href="https://github.com/lfkdsk/calotype-site/issues">反馈（GitHub Issues）</a></li>
+        <li><a href="en/" hreflang="en" lang="en">English</a></li>
+      </ul>
+      <p>本站不使用 Cookie，不加载外部资源，也不做访问统计。Apple、iPhone、ProRAW 和 TestFlight 是 Apple Inc. 的商标。</p>
+    </div>
+  </footer>
+</body>
+</html>

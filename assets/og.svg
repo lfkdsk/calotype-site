@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Source for og.png. Re-render with: rsvg-convert -w 1200 -h 630 assets/og.svg -o assets/og.png -->
+  <rect width="1200" height="630" fill="#f3eee6"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#1e1713" stroke-opacity="0.2" stroke-width="2"/>
+  <g transform="translate(96 141) scale(0.34)">
+    <path d="M702.92 321.08A270 270 0 1 0 702.92 702.92" fill="none" stroke="#1e1713" stroke-width="170"/>
+    <circle cx="512" cy="512" r="72" fill="#ff6a00"/>
+  </g>
+  <line x1="490" y1="150" x2="490" y2="480" stroke="#1e1713" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="540" y="290" font-family="C059, Georgia, 'DejaVu Serif', serif" font-size="104" font-weight="700" fill="#1e1713">Calotype</text>
+  <text x="544" y="360" font-family="C059, Georgia, 'DejaVu Serif', serif" font-size="40" fill="#1e1713">Raw first. Then develop.</text>
+  <text x="544" y="440" font-family="'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="22" letter-spacing="3" fill="#5f5249">IPHONE CAMERA · TESTFLIGHT BETA</text>
+  <rect x="544" y="462" width="120" height="4" fill="#ff6a00"/>
+</svg>

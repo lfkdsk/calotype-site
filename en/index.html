@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Calotype · An iPhone camera that keeps the raw, then develops</title>
+  <meta name="description" content="Calotype is an iPhone camera. It shoots Apple ProRAW, saves the original first, then develops it into a photo on the phone. Now in public beta on TestFlight.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3eee6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15100d" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://calotype.lfkdsk.org/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://calotype.lfkdsk.org/">
+  <link rel="alternate" hreflang="en" href="https://calotype.lfkdsk.org/en/">
+  <link rel="alternate" hreflang="x-default" href="https://calotype.lfkdsk.org/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Calotype">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:url" content="https://calotype.lfkdsk.org/en/">
+  <meta property="og:title" content="Calotype · Raw first, then develop">
+  <meta property="og:description" content="An iPhone camera that shoots Apple ProRAW and develops it on the phone. Public beta on TestFlight.">
+  <meta property="og:image" content="https://calotype.lfkdsk.org/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Calotype C mark and name">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="../assets/develop.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap site-head">
+    <a class="brand" href="./" aria-label="Calotype home">
+      <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+        <path class="arc" d="M702.92 321.08A270 270 0 1 0 702.92 702.92" fill="none" stroke-width="170"/>
+        <circle class="dot" cx="512" cy="512" r="72"/>
+      </svg>
+      <span>Calotype</span>
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="privacy.html">Privacy</a>
+      <a href="../" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">iPhone camera · TestFlight public beta</p>
+        <h1>Raw first.<br>Then develop.</h1>
+        <p class="lead">Calotype is an iPhone camera. It shoots Apple ProRAW, saves the original in full first, then develops it into a photo on the phone and adds it to your photo library.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://testflight.apple.com/join/3yMsYRav">Join the TestFlight beta <span class="arrow" aria-hidden="true">↗</span></a>
+          <p class="cta-note">Beta build, installed through Apple’s TestFlight. Requires iOS 17 or later and an iPhone Pro model that supports Apple ProRAW.</p>
+        </div>
+      </div>
+
+      <figure class="plate develop" data-develop>
+        <div class="plate-frame">
+          <div class="plate-edge top" aria-hidden="true"><span>Calotype</span><span>4 : 3</span></div>
+          <svg class="plate-image" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
+            <rect width="800" height="600" fill="#ede3d3"/>
+            <circle cx="560" cy="226" r="96" fill="#ff6a00"/>
+            <path d="M0 330 L120 290 L230 312 L360 252 L470 300 L600 268 L720 296 L800 280 L800 392 L0 392 Z" fill="#b79c83"/>
+            <path d="M0 392 L800 392 L800 600 L0 600 Z" fill="#d6c6b0"/>
+            <rect x="520" y="404" width="80" height="6" fill="#ff6a00"/>
+            <rect x="532" y="424" width="56" height="5" fill="#ff6a00"/>
+            <rect x="542" y="442" width="36" height="4" fill="#ff6a00"/>
+            <rect x="550" y="458" width="20" height="3" fill="#ff6a00"/>
+            <path d="M0 470 C160 438 300 452 420 486 C540 520 680 528 800 506 L800 600 L0 600 Z" fill="#6e5646"/>
+            <path d="M0 540 C200 520 420 548 800 560 L800 600 L0 600 Z" fill="#1e1713"/>
+            <rect x="196" y="300" width="10" height="190" fill="#1e1713"/>
+            <rect x="166" y="318" width="70" height="8" fill="#1e1713"/>
+          </svg>
+          <div class="plate-meter" aria-hidden="true"><span></span></div>
+          <div class="plate-edge bottom" aria-hidden="true"><span>1841</span><span class="plate-states"><span class="state-neg">Neg</span><span>▸</span><span class="state-pos">Pos</span></span></div>
+        </div>
+        <figcaption>
+          <span>Illustration: a negative developing into a positive. Not a sample photo.</span>
+          <button class="replay" type="button" data-replay hidden>Develop again</button>
+        </figcaption>
+      </figure>
+    </div>
+
+    <section class="wrap section" aria-labelledby="what-title">
+      <p class="section-label"><b>01</b>What it is</p>
+      <div class="prose">
+        <h2 id="what-title">Shooting and developing are two steps</h2>
+        <p>When you press the shutter, Calotype first writes the Apple ProRAW original into the app. Only then does it develop: it turns the original into a photo you can view and share right away (HEIF or JPEG) and saves it to your photo library.</p>
+        <p>The original stays in the app. If developing ever fails, you can develop it again from the original in the app’s album.</p>
+        <p class="aside-note">The name comes from the calotype, the process William Henry Fox Talbot patented in 1841: first a negative on paper, then a positive printed from it.</p>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="how-title">
+      <p class="section-label"><b>02</b>How to use it</p>
+      <div>
+        <h2 id="how-title">Four steps</h2>
+        <ol class="steps">
+          <li>
+            <h3>Frame</h3>
+            <p>The app opens straight to the rear camera viewfinder. Switch lenses (depending on your model), set exposure compensation, and long-press the viewfinder to lock exposure and focus.</p>
+          </li>
+          <li>
+            <h3>Shoot</h3>
+            <p>Press the shutter. The ProRAW original is saved in the app first.</p>
+          </li>
+          <li>
+            <h3>Develop</h3>
+            <p>Developing runs in a queue in the background. You don’t have to wait for it; keep shooting.</p>
+          </li>
+          <li>
+            <h3>Save</h3>
+            <p>Finished photos go to your photo library as HEIF, JPEG or both. In Settings you can also choose to save the ProRAW original alongside.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="why-title">
+      <p class="section-label"><b>03</b>Why</p>
+      <div>
+        <h2 id="why-title">Three ideas behind it</h2>
+        <dl class="notes">
+          <div>
+            <dt>Developed from RAW</dt>
+            <dd>Every photo is developed from its ProRAW original. The original stays in the app, so you can always go back to where you started.</dd>
+          </div>
+          <div>
+            <dt>Processed in the background</dt>
+            <dd>The shutter doesn’t wait for developing. Shooting and developing queue separately, so you can take the next shot right away.</dd>
+          </div>
+          <div>
+            <dt>A quiet interface</dt>
+            <dd>It opens to the viewfinder. The controls you use often stay at hand; the rest live in Settings.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Sample gallery. Add approved photos to samples/ (see samples/README.md),
+         fill in the list items below, then delete the hidden attribute on this section. -->
+    <section class="wrap section" id="samples" aria-labelledby="samples-title" hidden>
+      <p class="section-label"><b>※</b>Samples</p>
+      <div>
+        <h2 id="samples-title">Photos taken with Calotype</h2>
+        <ul class="samples-grid">
+          <!--
+          <li>
+            <figure>
+              <img src="../samples/01.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Short description of what the photo shows">
+              <figcaption>Place or note</figcaption>
+            </figure>
+          </li>
+          -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="req-title">
+      <p class="section-label"><b>04</b>Requirements</p>
+      <div>
+        <h2 id="req-title">What you need</h2>
+        <dl class="specs">
+          <div><dt>Device</dt><dd>An iPhone Pro model that supports Apple ProRAW (iPhone only)</dd></div>
+          <div><dt>System</dt><dd>iOS 17 or later</dd></div>
+          <div><dt>Install</dt><dd>Install Apple’s TestFlight app on your iPhone, then open the beta link below</dd></div>
+          <div><dt>Network</dt><dd>Not needed. The app doesn’t connect to the internet; see the <a href="privacy.html">privacy notice</a></dd></div>
+          <div><dt>Status</dt><dd>Public beta. Features and interface are still changing; bug reports are welcome</dd></div>
+        </dl>
+        <div class="cta-row closing">
+          <a class="cta" href="https://testflight.apple.com/join/3yMsYRav">Join the TestFlight beta <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>Calotype · iPhone camera</p>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <!-- TODO(main session): confirm the public feedback channel before publishing. -->
+        <li><a href="https://github.com/lfkdsk/calotype-site/issues">Feedback (GitHub Issues)</a></li>
+        <li><a href="../" hreflang="zh-Hans" lang="zh-Hans">中文</a></li>
+      </ul>
+      <p>This site sets no cookies, loads nothing from other servers and runs no analytics. Apple, iPhone, ProRAW and TestFlight are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>

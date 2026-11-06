@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>隐私说明 · Calotype</title>
+  <meta name="description" content="Calotype 不联网，不收集、不上传你的数据。这里说明它使用的每一项权限。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3eee6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15100d" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://calotype.lfkdsk.org/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://calotype.lfkdsk.org/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://calotype.lfkdsk.org/en/privacy.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Calotype">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:url" content="https://calotype.lfkdsk.org/privacy.html">
+  <meta property="og:title" content="Calotype 隐私说明">
+  <meta property="og:description" content="Calotype 不联网，不收集、不上传你的数据。">
+  <meta property="og:image" content="https://calotype.lfkdsk.org/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Calotype 的 C 形标记和名称">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="wrap site-head">
+    <a class="brand" href="./" aria-label="Calotype 首页">
+      <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false">
+        <path class="arc" d="M702.92 321.08A270 270 0 1 0 702.92 702.92" fill="none" stroke-width="170"/>
+        <circle class="dot" cx="512" cy="512" r="72"/>
+      </svg>
+      <span>Calotype</span>
+    </a>
+    <nav class="site-nav" aria-label="站点">
+      <a href="privacy.html" aria-current="page">隐私</a>
+      <a href="en/privacy.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap doc">
+    <h1>隐私说明</h1>
+    <p class="updated">更新于 2026-11-05 · 适用于当前 TestFlight 公测版本</p>
+
+    <div class="summary">
+      <p>简单说：Calotype 不联网。它不收集、不上传、不出售你的任何数据，没有账号、广告、统计或追踪。照片只在你的 iPhone 上处理和保存。</p>
+    </div>
+
+    <section aria-labelledby="p-net">
+      <h2 id="p-net">网络</h2>
+      <p>App 里没有任何网络请求：不连接服务器，不上传照片或原片，也不发送使用数据。拍摄和显影都在手机上完成。</p>
+    </section>
+
+    <section aria-labelledby="p-camera">
+      <h2 id="p-camera">相机</h2>
+      <p>用途：用后置相机拍摄 Apple ProRAW。只在你打开 App 取景、拍摄时使用。</p>
+    </section>
+
+    <section aria-labelledby="p-photos">
+      <h2 id="p-photos">照片库</h2>
+      <p>用途：把显影后的照片，以及你选择保留的 ProRAW 原片，存进系统相册。</p>
+      <p>App 申请的是照片库的读写权限，原因只有一个：当你在 App 里删除一张照片时，它会一并删除自己之前存进相册的那份副本，删除前 iOS 会弹窗请你确认。App 只按自己存入的条目操作，不浏览、不读取相册里的其他照片。</p>
+      <p>你可以只允许部分访问，或者拒绝。拒绝时照片仍然保存在 App 里，只是不会存进系统相册。</p>
+      <p>照片存进系统相册以后，是否同步到 iCloud 由你的系统设置决定，与本 App 无关。</p>
+    </section>
+
+    <section aria-labelledby="p-motion">
+      <h2 id="p-motion">设备姿态</h2>
+      <p>用途：取景器里的水平仪。App 只用设备姿态实时显示画面是否水平，不记录、不保存。</p>
+    </section>
+
+    <section aria-labelledby="p-location">
+      <h2 id="p-location">位置</h2>
+      <p>当前版本不申请位置权限，也不读取你的位置。</p>
+    </section>
+
+    <section aria-labelledby="p-local">
+      <h2 id="p-local">保存在手机上的数据</h2>
+      <ul>
+        <li>原片、成片，以及每次显影的技术记录（尺寸、耗时之类），保存在 App 自己的文件夹里。你可以在“文件”App 的“我的 iPhone”里找到它。</li>
+        <li>App 的设置保存在本机。</li>
+        <li>删除 App 会一起删除这些文件；已经存进系统相册的照片不受影响。</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="p-share">
+      <h2 id="p-share">分享和导入</h2>
+      <p>只有在你点“分享”时，App 才会把你选中的文件交给 iOS 的分享面板，发到哪里由你决定。你通过系统文件选择器主动选择的文件，只在本机读取。</p>
+    </section>
+
+    <section aria-labelledby="p-tf">
+      <h2 id="p-tf">TestFlight</h2>
+      <p>测试版通过 Apple 的 TestFlight 安装。TestFlight 可能会向开发者提供与测试相关的信息，例如设备型号、系统版本、安装与使用次数、崩溃报告，以及你主动提交的反馈和截图。这部分由 Apple 处理，适用 Apple 的隐私政策，不经过 Calotype App 本身。</p>
+    </section>
+
+    <section aria-labelledby="p-change">
+      <h2 id="p-change">变更与联系</h2>
+      <p>如果以后的版本改变了上面的任何一项，比如申请新的权限，会先更新本页。</p>
+      <!-- TODO(main session): confirm the public feedback channel before publishing. -->
+      <p>有问题可以在 <a href="https://github.com/lfkdsk/calotype-site/issues">GitHub Issues</a> 留言。</p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <p>Calotype · iPhone 相机</p>
+      <ul>
+        <li><a href="./">首页</a></li>
+        <li><a href="https://github.com/lfkdsk/calotype-site/issues">反馈（GitHub Issues）</a></li>
+        <li><a href="en/privacy.html" hreflang="en" lang="en">English</a></li>
+      </ul>
+      <p>本站不使用 Cookie，不加载外部资源，也不做访问统计。Apple、iPhone、ProRAW、iCloud 和 TestFlight 是 Apple Inc. 的商标。</p>
+    </div>
+  </footer>
+</body>
+</html>
