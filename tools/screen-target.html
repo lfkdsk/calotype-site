@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Calotype 屏幕色块</title>
+<style>
+  :root { --bg: #6f6f6f; }
+  html, body { margin: 0; height: 100%; background: var(--bg); cursor: default; }
+  body.shooting { cursor: none; }
+  #stage { position: fixed; inset: 0; display: grid; place-items: center; }
+  /* Fixed 6 x 5 grid in a 3:2 area, centred, with corner fiducials. */
+  #board { position: relative; width: min(92vw, 138vh); aspect-ratio: 3 / 2; }
+  #grid { position: absolute; inset: 9% 7%; display: grid;
+          grid-template-columns: repeat(6, 1fr); grid-template-rows: repeat(5, 1fr); gap: 2.2%; }
+  .patch { border-radius: 2px; }
+  .mark { position: absolute; width: 5.5%; aspect-ratio: 1; background:
+          conic-gradient(#000 0 25%, #fff 0 50%, #000 0 75%, #fff 0); }
+  .mark.tl { left: 0; top: 0; } .mark.tr { right: 0; top: 0; }
+  .mark.bl { left: 0; bottom: 0; } .mark.br { right: 0; bottom: 0; }
+  #help { position: fixed; left: 16px; right: 16px; bottom: 16px; color: #eee; font: 14px/1.5 -apple-system, "PingFang SC", sans-serif;
+          background: rgba(0,0,0,.55); padding: 10px 14px; border-radius: 8px; max-width: 760px; }
+  body.shooting #help { display: none; }
+  button { font: inherit; margin-top: 6px; padding: 4px 12px; }
+</style>
+</head>
+<body>
+<div id="stage"><div id="board">
+  <div class="mark tl"></div><div class="mark tr"></div><div class="mark bl"></div><div class="mark br"></div>
+  <div id="grid"></div>
+</div></div>
+<div id="help">
+  拍摄前：关掉原彩显示（True Tone）、夜览、自动亮度，亮度调到中等并固定；关灯或避开反光。<br>
+  手机正对屏幕，色板占画面大部分，稍微离远一点或轻微失焦以免摩尔纹；同一位置连拍一张 ProRAW、一张 Bayer。<br>
+  <button id="go">全屏开始（按 Esc 退出）</button>
+</div>
+<script>
+// Display-P3 encoded values, fixed order, row by row. Keep this order: the analysis reads patches by grid position.
+const P = [
+  [.10,.10,.10],[.25,.25,.25],[.40,.40,.40],[.55,.55,.55],[.70,.70,.70],[.85,.85,.85],
+  [.85,.10,.10],[.10,.75,.15],[.15,.20,.85],[.10,.75,.80],[.80,.15,.75],[.90,.85,.10],
+  [.90,.50,.10],[.55,.80,.15],[.10,.55,.55],[.50,.30,.80],[.90,.45,.60],[.50,.32,.18],
+  [.85,.65,.55],[.45,.30,.22],[.45,.60,.85],[.35,.45,.20],[.80,.72,.50],[.35,.35,.65],
+  [.50,.05,.08],[.05,.40,.12],[.08,.12,.45],[.45,.45,.10],[.40,.10,.35],[.05,.35,.40],
+];
+const grid = document.getElementById('grid');
+const p3 = window.CSS && CSS.supports('color', 'color(display-p3 1 0 0)');
+for (const [r, g, b] of P) {
+  const d = document.createElement('div');
+  d.className = 'patch';
+  d.style.background = p3 ? `color(display-p3 ${r} ${g} ${b})` : `rgb(${r*255} ${g*255} ${b*255})`;
+  grid.appendChild(d);
+}
+document.getElementById('go').onclick = async () => {
+  try { await document.documentElement.requestFullscreen(); } catch (e) {}
+  document.body.classList.add('shooting');
+};
+document.addEventListener('fullscreenchange', () => {
+  if (!document.fullscreenElement) document.body.classList.remove('shooting');
+});
+</script>
+</body>
+</html>
